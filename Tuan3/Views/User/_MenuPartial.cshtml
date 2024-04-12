@@ -1,0 +1,35 @@
+﻿@model Tuan3.ViewModels.UserViewModel
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" datatarget="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                @foreach (var item in Model.Menus)
+                {
+                    <li><a href="/@item.Link">@item.Title</a></li>
+                }
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="dang-ky">
+                        <span class="glyphicon glyphicon-user"></span> Đăng
+                        ký
+                    </a>
+                </li>
+                <li>
+                    <a href="dang-nhap">
+                        <span class="glyphicon glyphicon-log-in"></span> Đăng
+                        nhập
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

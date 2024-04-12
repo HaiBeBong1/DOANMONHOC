@@ -1,0 +1,33 @@
+﻿/* Set padding to keep content from hitting the edges */
+.body-content {
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Điều chỉnh màu nền và màu chữ của thanh điều hướng */
+.navbar-inverse {
+    background-color: #ff69b4; /* Màu hồng */
+    border-color: #fbf6f6; /* Màu viền */
+}
+
+    .navbar-inverse .navbar-nav > li > a {
+        color: white; /* Màu chữ */
+    }
+
+    .navbar-inverse .navbar-brand {
+        color: white; /* Màu chữ */
+    }
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column */
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}

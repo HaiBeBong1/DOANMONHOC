@@ -1,0 +1,173 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+ 
+    </style>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PET'S STORE</title>
+    <meta name="keywords" content="chó, mèo, chó con, chó cái, chó đực, thức ăn cho chó, chăm sóc chó cưng, hoàng thượng, boss, cún, sen, mèo con, mèo tam thể, mèo mun, cho, meo, hoang thuong, boss, cua hang thu cung" />
+    <meta name="description" content="Website Dành Cho Chó Mèo - PET'S STORE" />
+    <meta name="copyright" content="PET'S STORE" />
+    <meta name="author" content="PET'S STORE" />
+    <link rel="shortcut icon" href="~/images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="~/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/vendor/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+   
+</head>
+<body>
+ 
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <a href="trang-chu"> <img src="~/images/logo2.jpg" alt="PET'S STORE"></a>
+            </div>
+
+            <div class="container">
+                @await Html.PartialAsync("_MenuPartial")
+                
+
+            </div>
+        </div>
+    </div>
+  
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    @RenderBody()
+                </div>
+                <div class="col-md-3">
+                    <div class="panel panel-primary panel-post">
+                        <div class="panel-heading panel-heading-prod"><i class="fa fa-comments-o"></i> Bài viết chăm sóc da mặt</div>
+                        <div class="panel-body panel-body-post">
+                            <h4><a href="#">Cách chăm sóc da mặt hiệu quả</a></h4>
+                            <p>Rửa sạch da là bước khởi đầu cũng là bước quan trọng trong quy trình chăm sóc da mặt. Nó giúp loại bỏ bã nhờn, bụi bẩn, dầu dừa và vi khuẩn trên mặt. Nhờ đó, lỗ chân lông trở nên thông thoáng, giúp ngăn chặn các vấn đề về da đặc biệt là mụn. .</p>
+
+                            <h4><a href="#">Làm sao chăm sóc da mặt đúng cách </a></h4>
+                            <p>Bất kỳ cô gái nào cũng ao ước sở hữu một làn da đẹp, khỏe mạnh và sạch mụn. Vì vậy nhiều chị em không tiếc tiền mua về hàng tá mỹ phẩm mà chưa biết cách chăm sóc da mặt hiệu quả thì da vẫn không đạt như mong muốn. Vậy, hãy “bỏ túi” ngay các bước chăm sóc da mặt đúng chuẩn, được các chuyên gia khuyên dùng sau đây.</p>
+                        </div>
+                        <div class="panel-footer">
+                            <p class="more-prod"><a href="#" target="_blank">Xem thêm bài viết...</a></p>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-success panel-post">
+                        <div class="panel-heading panel-heading-prod"><i class="fa fa-paper-plane"></i> Quảng cáo</div>
+                        <div class="panel-body panel-body-post">
+                            <img src="~/images/products/sua-rua-mat-svr-200ml.png" class="img-rounded img-adv" alt="Quảng cáo" />
+                            <marquee>Gel Rửa Mặt SVR Sebiaclear Gel Moussant là sản phẩm sữa rửa mặt dành cho làn da dầu mụn đến từ thương hiệu dược mỹ phẩm SVR của Pháp ! </marquee>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="youtube">
+                        <iframe width="100%" height="200" src="https://www.youtube.com/embed/SKsW2DqnMlo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.4206985418705!2d106.78253487570396!3d10.855572157727538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175276e7ea103df%3A0xb6cf10bb7d719327!2zSFVURUNIIC0gxJDhuqFpIGjhu41jIEPDtG5nIG5naOG7hyBUUC5IQ00gKFRodSBEdWMgQ2FtcHVzKQ!5e0!3m2!1svi!2s!4v1710172843840!5m2!1svi!2s" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="container container-footer">
+            <div class="col-md-8">
+                <h4>MV HAIBEBONG - Cửa hàng dành cho sắc đẹp</h4>
+                <p>Địa chỉ: HUTECH Thuduc Campus - Khu CNC, Phường Hiệp Phú, Tp. Thử Đức, Tp. Hồ chí Minh</p>
+                <p>SĐT: <a class="info" href="tel:0868895261">086.8895.261</a> (Phước Nguyễn)</p>
+                <p>Email: <a class="info" href="mailto: 12345@gmail.com">12345@gmail.com</a></p>
+            </div>
+
+            <div class="col-md-4">
+                <img src="~/images/pngtree-beauty-logo-design-png-image_6568470.png" alt="logo" />
+                <p></p>
+                <p>Số lượng truy cập hiện tại: 100</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalSignup" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Đăng ký</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="username">Username:</label>
+                            <input type="text" class="form-control" id="username" placeholder="Nhập username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="fullname">Họ tên:</label>
+                            <input type="text" class="form-control" id="fullname" placeholder="Nhập họ tên" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Địa chỉ:</label>
+                            <input type="text" class="form-control" id="address" placeholder="Nhập địa chỉ">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Số điện thoại:</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Nhập số điện thoại">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Nhập email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Mật khẩu:</label>
+                            <input type="password" class="form-control" id="password" placeholder="Nhập mật khẩu" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmPassword">Nhập lại mật khẩu:</label>
+                            <input type="password" class="form-control" id="confirmPassword" placeholder="Nhập lại mật khẩu" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Đăng ký</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/js/jquery.min.js"></script>
+    <div id="modalLogin" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Đăng nhập</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="username">Username:</label>
+                            <input type="text" class="form-control" id="username" placeholder="Nhập username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Mật khẩu:</label>
+                            <input type="password" class="form-control" id="password" placeholder="Nhập mật khẩu" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Đăng nhập</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/site.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+    
+</body>
+</html>
+
+
